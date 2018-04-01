@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maquina Exependedora</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+</head>
+
+<body>
+    <div class="container">
+        <% include nav%>
+        <div class="row">
+            <div>
+                <img src="images/banner.png" alt="">
+            </div>
+            <div class="three columns">
+                <table class="u-full-width">
+                    <tr>
+                        <td>
+                            <label for="">A1</label>
+                            <br>
+                            <h5>Papas natural</h5>
+                            <br>
+                            <img src="images/papas.jpg" alt="">
+                            <br>
+                            <h6>Disponibles:
+                                <span id="cantA1">0</span>
+                            </h6>
+                            <br>
+                            <h6>Precio:
+                                <span id="precioA1">1300</span>
+                            </h6>
+                            <br>
+                            <button class="button button-primary" onclick="venderProducto1()">Comprar</button>
+                            <button class="button" onclick="abastecerProd1()">Abastecer</button>
+                        </td>
+                        <td>
+                            <label for="">B2</label>
+                            <br>
+                            <h5>Jugo Hit</h5>
+                            <br>
+                            <img src="images/jugo.jpg" alt="">
+                            <br>
+                            <h6>Disponibles:
+                                <span id="cantB2">0</span>
+                            </h6>
+                            <br>
+                            <h6>Precio:
+                                <span id="precioB2">2000</span>
+                            </h6>
+                            <br>
+                            <button class="button button-primary" onclick="venderProducto2()">Comprar</button>
+                            <button class="button" onclick="abastecerProd2()">Abastecer</button>
+                        </td>
+                        <td>
+                            <label for="">C3</label>
+                            <br>
+                            <h5>Chocolatina</h5>
+                            <br>
+                            <img src="images/jet.jpg" alt="">
+                            <br>
+                            <h6>Disponibles:
+                                <span id="cantC3">0</span>
+                            </h6>
+                            <br>
+                            <h6>Precio:
+                                <span id="precioC3">500</span>
+                            </h6>
+                            <br>
+                            <button class="button button-primary" onclick="venderProducto3()">Comprar</button>
+                            <button class="button" onclick="abastecerProd3()">Abastecer</button>
+                        </td>
+                        <td>
+                            <label for="">D4</label>
+                            <br>
+                            <h5>Galleta Festival</h5>
+                            <br>
+                            <img src="images/galleta.jpg" alt="">
+                            <br>
+                            <h6>Disponibles:
+                                <span id="cantD4">0</span>
+                            </h6>
+                            <br>
+                            <h6>Precio:
+                                <span id="precioD4">800</span>
+                            </h6>
+                            <br>
+                            <button class="button button-primary" onclick="venderProducto4()">Comprar</button>
+                            <button class="button" onclick="abastecerProd4()">Abastecer</button>
+                        </td>
+                        <td>
+                            <button class="button button-primary" onclick="cantidadDeVentas()">Cantidad de ventas</button>
+                            <button class="button" onclick="valorTotalDeVentas()">Valor total ventas</button>
+                            <button class="button button-primary" onclick="disponibilidadDeProductos()">% Disponibilidad</button>
+                            <button class="button" onclick="cantidadDeVentas()">Unidades vendidas</button>
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+            <br>
+            <% include resultado%>
+        </div>
+        
+    </div>
+    <% include footer%>
+   
+    <script src="javascripts/maquina.js"></script>
+
+</body>
+
+</html>
